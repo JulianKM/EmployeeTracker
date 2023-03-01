@@ -7,7 +7,7 @@ class DB {
 
     getAllEmployees() {
         return this.connection.promise().query(
-            "SELECT employee.id, employee.first_name FROM employee"
+            "SELECT employee.id, employee.first_name, employee.last_name FROM employee"
         )
     }
     getAllDepartments() {

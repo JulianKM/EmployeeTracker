@@ -166,7 +166,7 @@ function addEmployee() {
         }
     ])
         .then(response => {
-            // response.manager_id = null;
+            response.manager_id = null;
             db.addEmployee(response)
                 .then(() => prompt_employee())
         })
